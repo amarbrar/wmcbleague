@@ -12,10 +12,33 @@ namespace wmcb.web.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult Fixtures()
         {
-            ViewBag.Message = "Your application description page.";
+            return View();
+        }
+        public ActionResult Teams()
+        {
+            return View();
+        }
+        public ActionResult Stats()
+        {
+            return View();
+        }
+        public ActionResult Grounds()
+        {
+            return View();
+        }
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+        public ActionResult Downloads()
+        {
+            return View();
+        }
+        public ActionResult Newsletter()
+        {
+            ViewBag.Message = "Your newsletter description page.";
 
             return View();
         }

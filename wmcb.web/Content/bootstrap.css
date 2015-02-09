@@ -4028,7 +4028,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  font:13px/1em BentonSans,Arial,sans-serif;
+  font:bold 15px/1em BentonSans,Arial,sans-serif ;
 }
 
 .navbar:before,
