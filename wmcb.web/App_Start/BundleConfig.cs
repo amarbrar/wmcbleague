@@ -22,10 +22,18 @@ namespace wmcb.web
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/bundles/gallery").Include(
+                 "~/Scripts/bootstrap-image-gallery.min.js",
+               "~/Scripts/wmcb/gallery.js"              
+               ));
 
+            bundles.Add(new StyleBundle("~/Content/css/gallery").Include(
+                    "~/Content/bootstrap-image-gallery.min.css"));
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/bootsnipp.css"));
+           
         }
     }
 }

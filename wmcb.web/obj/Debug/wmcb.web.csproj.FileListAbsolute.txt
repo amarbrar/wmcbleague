@@ -73,6 +73,6 @@ D:\Other\wmcb\wmcb\wmcb.web\bin\System.Web.WebPages.Deployment.xml
 D:\Other\wmcb\wmcb\wmcb.web\bin\System.Web.WebPages.Razor.xml
 D:\Other\wmcb\wmcb\wmcb.web\bin\Antlr3.Runtime.pdb
 D:\Other\wmcb\wmcb\wmcb.web\bin\Newtonsoft.Json.xml
-D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.csprojResolveAssemblyReference.cache
 D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.dll
 D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.pdb
+D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.csprojResolveAssemblyReference.cache
