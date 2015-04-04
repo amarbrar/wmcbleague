@@ -6,17 +6,31 @@
     <title>@ViewBag.Title - WMCB</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=622211794484959&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-inverse navbar-fixed-top wmcbnavbar">
+        <a class="navbar-brand " href="/Home/Index">
+            <img src="~/Images/wmcb.jpg" />
+        </a>
+        <div class="container" style="padding-top:30px;">           
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("WMCB", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -33,15 +47,20 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content">        
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Washington Metropolitan Cricket Board</p>
-        </footer>
+        <div class="container" >
+            <hr />
+            <footer>
+                <div class="row">
+                    <div class="col-md-6"><p>&copy; @DateTime.Now.Year - Washington Metropolitan Cricket Board</p></div>
+                    <div class="col-md-6 fb-like text-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+                </div>
+
+            </footer>
+        </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

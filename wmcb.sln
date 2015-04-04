@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wmcb.web", "wmcb.web\wmcb.web.csproj", "{9E7C2D72-9FC0-40B3-9892-A4E069772F2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wmcb.repo", "wmcb.repo\wmcb.repo.csproj", "{80647987-E71E-4F82-A3B6-479BA2BD4E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wmcb.model", "wmcb.model\wmcb.model.csproj", "{9A725898-E888-4A9B-99DD-479F83E95276}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9E7C2D72-9FC0-40B3-9892-A4E069772F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E7C2D72-9FC0-40B3-9892-A4E069772F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E7C2D72-9FC0-40B3-9892-A4E069772F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80647987-E71E-4F82-A3B6-479BA2BD4E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80647987-E71E-4F82-A3B6-479BA2BD4E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80647987-E71E-4F82-A3B6-479BA2BD4E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80647987-E71E-4F82-A3B6-479BA2BD4E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A725898-E888-4A9B-99DD-479F83E95276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A725898-E888-4A9B-99DD-479F83E95276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A725898-E888-4A9B-99DD-479F83E95276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A725898-E888-4A9B-99DD-479F83E95276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

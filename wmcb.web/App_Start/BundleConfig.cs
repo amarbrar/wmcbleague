@@ -10,6 +10,9 @@ namespace wmcb.web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/index").Include(
+                        "~/Scripts/mustache.js",
+                        "~/Scripts/wmbc/index.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -24,11 +27,11 @@ namespace wmcb.web
                       "~/Scripts/respond.js"));
             bundles.Add(new ScriptBundle("~/bundles/gallery").Include(
                  "~/Scripts/bootstrap-image-gallery.min.js",
-               "~/Scripts/wmcb/gallery.js"              
+               "~/Scripts/wmcb/gallery.js"
                ));
 
             bundles.Add(new StyleBundle("~/Content/css/gallery").Include(
-                    "~/Content/bootstrap-image-gallery.min.css"));
+                    "~/Content/ekko-lightbox.min.css"));
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",

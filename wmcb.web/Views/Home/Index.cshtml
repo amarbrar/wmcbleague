@@ -1,19 +1,99 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="row">&nbsp;</div>
+<style type="text/css">
+    .item {
+        background: #d3d3d3;
+        text-align: center;
+        padding: 30px 100px 50px 110px;
+        height: 220px !important;
+    }
+
+    .carousel {
+        margin-top: 20px;
+    }
+</style>
 
 <div class="row">
-    <div class="col-md-8 well">
-        <h2>Main Section</h2>
-        <p>
-            Main section will appear here.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="col-md-5">
+        <h3>2014 WMCB Championship Playoff Picture</h3>
+        <h5><small>WMCB Reporter. <em> September 3, 2014</em></small></h5>
+        <div>
+            With only 1 weekend of regular season cricket remaining in WMCB, the playoff picture nears completion but while it may have found most of the pieces of the puzzle, where and how they fit in still remains. Therefore, most of the games scheduled for September 6 and 7 still carry a huge meaning. Let’s see how the teams are faring in the playoff race.
+            <a target="_blank" href="http://wmcbleague.org/blog/?p=391"> (Read more...)</a>
+        </div>
+        <h3>Mavericks Claim the 2014 Maryland Cup</h3>
+        <h5><small>WMCB Reporter. <em> September 2, 2014</em></small></h5>
+        <div>
+            WMCB hosted the second edition of the Maryland Cup sponsored by the PG County over the labor day weekend (Aug 30-Sep 1, 2014) at Oxon Hill as well as WCC Turf Park facilities. Mavericks were crowned the 2014 champions after chasing a truncated target as rain intervened during the final. Richardson Sacrais (4-1-12-3) bowled brilliantly to restrict a spirited Challengers side to 89 for 7 in 14.3 overs before rain prematurely ended the Challengers’ inning. With the game reduced to 5 overs,
+            and Mavericks chasing about a run a ball, the batsmen blasted their way to 31/3 in only 2.4 overs to give Mavericks the title.
+            <a target="_blank" href="http://wmcbleague.org/blog/?p=388"> (Read more...)</a>
+        </div>
+        <h3>WMCB to Host Second Edition of the Maryland Cup</h3>
+        <h5><small>WMCB Reporter. <em> August 29, 2014</em></small></h5>
+        <div>
+            WMCB will host the second edition of the Maryland Cup over the Labor Day weekend 2014. The tournament will feature 6 teams that would compete in Twenty20 format over three days for the Maryland Cup. Group A features 2013 finalists Washington alongside Bowie and Washington Turf Club. Group B includes Challengers, Mavericks and Spartans. The schedule for the games is as under  
+            <a target="_blank" href="http://wmcbleague.org/blog/?p=385"> (Read more...)</a>
+        </div>
     </div>
-    <div class="col-md-4 well-sm">
-        <h2>Sub Section</h2>
-        <p>Sub section will appear here</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:none;background:none;">
+                <h3 class="panel-title"><strong>Top Players</strong></h3>
+            </div>
+            <div class="panel-body">
+                Coming Soon...
+            </div>
+        </div>
+        <br/>
+        <div class="panel panel-default">
+            <div class="panel-heading" style="background-color:none;background:none;">
+                <h3 class="panel-title"><strong>Schedule</strong></h3>
+            </div>
+            <div class="panel-body">
+                Coming Soon...
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="well-sm text-center panel-primary">
+            <div class="panel-body">
+                <div><h6>Sponsors</h6></div>
+                <div>
+                    <img src="~/Images/ads/lancesoft.jpg" />
+                </div><br />
+                <div>
+                    <img src="~/Images/ads/zeesports.jpg" />
+                </div>
+            </div>
+        </div>
+        @*<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+                    <li data-target="#myCarousel" data-slide-to="1"> </li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <img src="~/Images/ads/lancesoft.jpg" />
+
+                    </div> <div class="item">
+                        <img src="~/Images/ads/zeesports.jpg" />
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"> </span> </a> <a class="carousel-control right" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"> </span> </a>
+            </div>*@
+        <div class="well-sm">
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/WMCBcricket" data-widget-id="346647573181911040" data-chrome="noscrollbar">Tweets by &#64;WMCBcricket</a>
+            <script>
+                !function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id))
+                    { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+                }(document, "script", "twitter-wjs");</script>
+        </div>
     </div>
 </div>
+@Scripts.Render("~/bundles/index")

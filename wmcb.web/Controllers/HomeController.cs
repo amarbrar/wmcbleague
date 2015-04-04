@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using wmcb.repo;
 
 namespace wmcb.web.Controllers
 {
     public class HomeController : Controller
     {
+        
         public ActionResult Index()
         {
+            var news = new NewsFeedRepo().getLast3NewsFeed();
             return View();
         }
         public ActionResult Fixtures()
@@ -38,14 +41,14 @@ namespace wmcb.web.Controllers
         }
         public ActionResult Newsletter()
         {
-            ViewBag.Message = "Your newsletter description page.";
+            //ViewBag.Message = "Your newsletter description page.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Washington Metropolitan Cricket Board";
 
             return View();
         }

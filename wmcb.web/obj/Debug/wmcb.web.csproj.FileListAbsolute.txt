@@ -76,3 +76,11 @@ D:\Other\wmcb\wmcb\wmcb.web\bin\Newtonsoft.Json.xml
 D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.dll
 D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.pdb
 D:\Other\wmcb\wmcb\wmcb.web\obj\Debug\wmcb.web.csprojResolveAssemblyReference.cache
+D:\Other\wmcb\wmcb\wmcb.web\bin\wmcb.model.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\wmcb.repo.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\wmcb.model.pdb
+D:\Other\wmcb\wmcb\wmcb.web\bin\wmcb.repo.pdb
+D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.xml
+D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.SqlServer.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.SqlServer.xml
