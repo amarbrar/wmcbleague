@@ -7,9 +7,9 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
-
+    @Scripts.Render("~/bundles/angularjs")
 </head>
-<body>
+<body ng-app="WMCBApp">
     <div id="fb-root"></div>
     <script>
         (function (d, s, id) {
@@ -19,46 +19,67 @@
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=622211794484959&version=v2.0";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="navbar navbar-inverse navbar-fixed-top wmcbnavbar">
-        <a class="navbar-brand " href="/Home/Index">
-            <img src="~/Images/wmcb.jpg" />
-        </a>
-        <div class="container" style="padding-top:30px;">           
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("HOME", "Index", "Home")</li>
-                    <li>@Html.ActionLink("FIXTURES", "Fixtures", "Home")</li>
-                    <li>@Html.ActionLink("TEAM PROFILES", "Teams", "Home")</li>
-                    <li>@Html.ActionLink("STATISTICS", "Stats", "Home")</li>
-                    <li>@Html.ActionLink("GROUNDS", "Grounds", "Home")</li>
-                    <li>@Html.ActionLink("GALLERY", "Gallery", "Home")</li>
-                    <li>@Html.ActionLink("DOWNLOADS", "Downloads", "Home")</li>
-                    <li>@Html.ActionLink("NEWSLETTER", "Newsletter", "Home")</li>
-                    <li>@Html.ActionLink("CONTACT", "Contact", "Home")</li>
-                </ul>
-            </div>
+  
+    <div class="navbar  navbar-fixed-top wmcbclearbackground">
+        <div class="navbar-brand logo ">
+            <a class="visible-lg" href="/Home/Index">
+                <img id="wmcblogo" src="~/Images/WMCB_LOGO_400x400.jpg" height="140" width="150" />
+            </a>
+            <a class="visible-md visible-xs visible-sm" href="/Home/Index">
+                <img id="wmcblogo" src="~/Images/WMCB_LOGO_400x400.jpg" width="115" height="113" />
+            </a>
+        </div>
+        <div class="logoname">Washington Metropolitan Cricket Board</div>
+        <div class="navbar-header navbar-inverse wmcbnavbar">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse wmcbnavbar">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                <li>@Html.ActionLink("FIXTURES", "Fixtures", "Home")</li>
+                <li>@Html.ActionLink("TEAM PROFILES", "Teams", "Home")</li>
+                <li>@Html.ActionLink("STATISTICS", "Stats", "Home")</li>
+                <li>@Html.ActionLink("GROUNDS", "Grounds", "Home")</li>
+                <li>@Html.ActionLink("DOWNLOADS", "Downloads", "Home")</li>
+                <li class="hidden-md hidden-sm visible-xs">@Html.ActionLink("GALLERY", "Gallery", "Home")</li>
+                <li class="hidden-md hidden-sm visible-xs">@Html.ActionLink("NEWSLETTER", "Newsletter", "Home")</li>
+                @*<li class="hidden-md  hidden-sm visible-xs dropdown-submenu">*@
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        ABOUT <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu wmcbnavbar navbar-inverse">
+                        <li>@Html.ActionLink("CONTACT", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("LOGIN", "Index", "Account")</li>
+                    </ul>
+                </li>
+                @*</li>*@
+            </ul>
         </div>
     </div>
-    <div class="container body-content">        
-        @RenderBody()
-        <div class="container" >
-            <hr />
-            <footer>
-                <div class="row">
-                    <div class="col-md-6"><p>&copy; @DateTime.Now.Year - Washington Metropolitan Cricket Board</p></div>
-                    <div class="col-md-6 fb-like text-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-                </div>
+@if (Request.IsAuthenticated)
+{
+    Html.RenderPartial("_AdminMenu");
+}
+    
 
-            </footer>
-        </div>
+ 
+    <div id="body" class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-6"><p>&copy; @DateTime.Now.Year - Washington Metropolitan Cricket Board</p></div>
+                @*<div class="col-md-6 fb-like text-right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>*@
+            </div>
+
+        </footer>
+
     </div>
 
     @Scripts.Render("~/bundles/bootstrap")

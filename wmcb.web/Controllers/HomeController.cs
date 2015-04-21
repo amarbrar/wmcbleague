@@ -11,8 +11,11 @@ namespace wmcb.web.Controllers
     {
         
         public ActionResult Index()
+        {            
+            return View();
+        }
+        public ActionResult Index1()
         {
-            var news = new NewsFeedRepo().getLast3NewsFeed();
             return View();
         }
         public ActionResult Fixtures()
@@ -42,10 +45,8 @@ namespace wmcb.web.Controllers
         public ActionResult Newsletter()
         {
             //ViewBag.Message = "Your newsletter description page.";
-
             return View();
         }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Washington Metropolitan Cricket Board";

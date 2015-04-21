@@ -10,6 +10,12 @@ namespace wmcb.web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/angularjs").Include(
+                "~/Scripts/underscore-min.js",
+                "~/Scripts/angular.min.js",
+                "~/Scripts/angular-sanitize.min.js",
+                "~/Scripts/angular/controllers/Controller.js"
+                , "~/Scripts/angular/services/wmcbService.js"));
             bundles.Add(new ScriptBundle("~/bundles/index").Include(
                         "~/Scripts/mustache.js",
                         "~/Scripts/wmbc/index.js"));

@@ -84,3 +84,9 @@ D:\Other\wmcb\wmcb\wmcb.web\bin\wmcb.repo.pdb
 D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.xml
 D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.SqlServer.dll
 D:\Other\wmcb\wmcb\wmcb.web\bin\EntityFramework.SqlServer.xml
+D:\Other\wmcb\wmcb\wmcb.web\bin\System.Net.Http.Formatting.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\System.Web.Http.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\System.Web.Http.WebHost.dll
+D:\Other\wmcb\wmcb\wmcb.web\bin\System.Net.Http.Formatting.xml
+D:\Other\wmcb\wmcb\wmcb.web\bin\System.Web.Http.xml
+D:\Other\wmcb\wmcb\wmcb.web\bin\System.Web.Http.WebHost.xml
